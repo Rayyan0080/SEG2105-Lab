@@ -1,5 +1,7 @@
 package com.uottawa.seg.lab3calculator;
 
+import static java.lang.Integer.parseInt;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -37,15 +39,32 @@ public class MainActivity extends AppCompatActivity {
         int pressID = view.getId();
 
         //If we had an equal sign pressed last, standard operation is to clean
-        if (opp == Operator.eq) {
-            opp = Operator.none;
-            resultText.setText("");
-        }
+//        if (R.id.buttonEq == pressID) {
+//            resultText.setText("equals");
+//            // Perform operation
+//            if (opp == Operator.div) {
+//                double math = data01 / data02;
+//                resultText.setText(math + "");
+//            } else if (opp == Operator.mul) {
+//                double math = data01 * data02;
+//                resultText.setText(math + "");
+//            } else if (opp == Operator.sub) {
+//                double math = data01 - data02;
+//                resultText.setText(math + "");
+//            } else if (opp == Operator.add) {
+//                double math = data01 + data02;
+//                resultText.setText(math + "");
+//            }
+//
+//            data01 = 0;
+//            data02 = 0;
+//            opp = Operator.none;
+//        }
 
         if (requiresCleaning) {
+            resultText.setText("");
             requiresCleaning = false;
             hasDot = false;
-            resultText.setText("");
         }
 
         //Figuring out which button was pressed and updating the represented text field object
@@ -81,7 +100,48 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickFunctionButton(View view) {
-        // Add your code here...
-    }
+        int pressId = view.getId();
 
+        if (pressId == R.id.buttonEq) {
+            // Parse second number
+            String temp = resultText.getText().toString();
+            if (!temp.isEmpty()) {
+                data02 = Double.parseDouble(temp);
+            }
+
+            double math = 0;
+            if (opp == Operator.div) {
+                math = data01 / data02;
+            } else if (opp == Operator.mul) {
+                math = data01 * data02;
+            } else if (opp == Operator.sub) {
+                math = data01 - data02;
+            } else if (opp == Operator.add) {
+                math = data01 + data02;
+            }
+
+            resultText.setText(String.valueOf(math));
+            data01 = 0;
+            data02 = 0;
+            opp = Operator.none;
+
+        } else {
+            String temp = resultText.getText().toString();
+            if (!temp.isEmpty()) {
+                data01 = Double.parseDouble(temp);
+            }
+
+            if (pressId == R.id.buttonDiv) {
+                opp = Operator.div;
+            } else if (pressId == R.id.buttonMul) {
+                opp = Operator.mul;
+            } else if (pressId == R.id.buttonMinus) {
+                opp = Operator.sub;
+            } else if (pressId == R.id.buttonPlus) {
+                opp = Operator.add;
+            }
+
+            requiresCleaning = true;
+        }
+    }
 }
