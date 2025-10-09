@@ -1,7 +1,9 @@
 package com.example.lab4;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,5 +23,10 @@ public class LogoSelectorActivity extends AppCompatActivity {
 
     public void setTeamIcon(View view) {
         // add your code here
+        Intent returnIntent = new Intent();
+        ImageView selectedImage = (ImageView) view;
+        returnIntent.putExtra("imageID", selectedImage.getId());
+        setResult(RESULT_OK, returnIntent);
+        finish();
     }
 }
