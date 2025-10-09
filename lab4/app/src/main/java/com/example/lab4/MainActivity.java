@@ -23,7 +23,6 @@ public class MainActivity extends Activity {
 
     public void setLogo(View view) {
         // add code here...
-        // setContentView(R.layout.activity_logo_selector);
         Intent intent = new Intent(getApplicationContext(),
                 LogoSelectorActivity.class);
         startActivityForResult(intent, 0);
@@ -43,7 +42,17 @@ public class MainActivity extends Activity {
 
     public void submit (View view) {
         // add code here...
-        setContentView(R.layout.activity_confirmation);
+        EditText teamNameView = (EditText) findViewById(R.id.teamNameViewId);
+        EditText postalCodeView = (EditText) findViewById(R.id.postalCodeId);
+
+        String teamName = teamNameView.getText().toString();
+        String postalCode = postalCodeView.getText().toString();
+
+        Team team = new Team(teamName, postalCode, drawableName);
+        Intent intent = new Intent(MainActivity.this, ConfirmationActivity.class);
+
+        intent.putExtra("teamInfo", team);
+        startActivity(intent);
     }
 
 
