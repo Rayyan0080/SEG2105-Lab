@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e899694-a899-4165-8334-8338817cc794" name="Changes" comment="" />
+    <list default="true" id="3e899694-a899-4165-8334-8338817cc794" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductCatalog_v1-master/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductCatalog_v1-master/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductCatalog_v1-master/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductCatalog_v1-master/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductCatalog_v1-master/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductCatalog_v1-master/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductCatalog_v1-master/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductCatalog_v1-master/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductCatalog_v1-master/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductCatalog_v1-master/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProductCatalog_v1-master/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,21 +24,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Rayyan0080"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Rayyan0080&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Rayyan0080/SEG2105-Lab",
-    "accountId": "5156a6f5-c6fb-4a3d-8c5d-45b6cd26d661"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Rayyan0080/SEG2105-Lab&quot;,
+    &quot;accountId&quot;: &quot;5156a6f5-c6fb-4a3d-8c5d-45b6cd26d661&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="33qCxAKiTockxTH9KqA0EFbRjzq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,8 +54,9 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/dev/SEG2105/SEG2105-Lab"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/dev/SEG2105/SEG2105-Lab",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater"
   }
 }]]></component>
   <component name="TaskManager">
