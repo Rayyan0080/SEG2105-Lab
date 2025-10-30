@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1037337567245",
+    "project_id": "lab-firebase-d919a",
+    "storage_bucket": "lab-firebase-d919a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037337567245:android:0a2f55ec909a7e66ec3544",
+        "android_client_info": {
+          "package_name": "com.uottawa.seg.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK5CoINXejLIHcb8NTP1sqmGQo0QVkiOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
